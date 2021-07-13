@@ -1,0 +1,426 @@
+.hover-trigger .hover-target {
+  display: none;
+  color: white;
+}
+
+.hover-trigger:hover .hover-target {
+  display: block;
+  color: white;
+}
+
+.hamburger {
+  padding: 0;
+  transform: scale(0.6);
+  margin-top: 3px;
+  color: white;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: white;
+}
+
+input {
+  -webkit-appearance: none !important;
+}
+
+.image-block {
+  margin-bottom: -7px;
+  text-align: center;
+}
+
+.soco-content p,
+.soco-content ol,
+.soco-content ul,
+.soco-content pre,
+.soco-content blockquote,
+.soco-content h1,
+.soco-content h2,
+.soco-content h3,
+.soco-content h4,
+.soco-content h5,
+.soco-content h6 {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.soco-content ol,
+.soco-content ul {
+  padding-left: 1.5em;
+}
+.soco-content ol > li,
+.soco-content ul > li {
+  list-style-type: none;
+}
+.soco-content ul > li::before {
+  content: '\2022';
+}
+.soco-content ul[data-checked='true'],
+.soco-content ul[data-checked='false'] {
+  pointer-events: none;
+}
+.soco-content ul[data-checked='true'] > li *,
+.soco-content ul[data-checked='false'] > li * {
+  pointer-events: all;
+}
+.soco-content ul[data-checked='true'] > li::before,
+.soco-content ul[data-checked='false'] > li::before {
+  color: #777;
+  cursor: pointer;
+  pointer-events: all;
+}
+.soco-content ul[data-checked='true'] > li::before {
+  content: '\2611';
+}
+.soco-content ul[data-checked='false'] > li::before {
+  content: '\2610';
+}
+.soco-content li::before {
+  display: inline-block;
+  white-space: nowrap;
+  width: 1.2em;
+}
+.soco-content li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+.soco-content li.ql-direction-rtl::before {
+  margin-left: 0.3em;
+  margin-right: -1.5em;
+}
+.soco-content ol li:not(.ql-direction-rtl),
+.soco-content ul li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+.soco-content ol li.ql-direction-rtl,
+.soco-content ul li.ql-direction-rtl {
+  padding-right: 1.5em;
+}
+.soco-content ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+.soco-content ol li:before {
+  content: counter(list-0, decimal) '. ';
+}
+.soco-content ol li.ql-indent-1 {
+  counter-increment: list-1;
+}
+.soco-content ol li.ql-indent-1:before {
+  content: counter(list-1, lower-alpha) '. ';
+}
+.soco-content ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.soco-content ol li.ql-indent-2 {
+  counter-increment: list-2;
+}
+.soco-content ol li.ql-indent-2:before {
+  content: counter(list-2, lower-roman) '. ';
+}
+.soco-content ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.soco-content ol li.ql-indent-3 {
+  counter-increment: list-3;
+}
+.soco-content ol li.ql-indent-3:before {
+  content: counter(list-3, decimal) '. ';
+}
+.soco-content ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.soco-content ol li.ql-indent-4 {
+  counter-increment: list-4;
+}
+.soco-content ol li.ql-indent-4:before {
+  content: counter(list-4, lower-alpha) '. ';
+}
+.soco-content ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+.soco-content ol li.ql-indent-5 {
+  counter-increment: list-5;
+}
+.soco-content ol li.ql-indent-5:before {
+  content: counter(list-5, lower-roman) '. ';
+}
+.soco-content ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8 list-9;
+}
+.soco-content ol li.ql-indent-6 {
+  counter-increment: list-6;
+}
+.soco-content ol li.ql-indent-6:before {
+  content: counter(list-6, decimal) '. ';
+}
+.soco-content ol li.ql-indent-6 {
+  counter-reset: list-7 list-8 list-9;
+}
+.soco-content ol li.ql-indent-7 {
+  counter-increment: list-7;
+}
+.soco-content ol li.ql-indent-7:before {
+  content: counter(list-7, lower-alpha) '. ';
+}
+.soco-content ol li.ql-indent-7 {
+  counter-reset: list-8 list-9;
+}
+.soco-content ol li.ql-indent-8 {
+  counter-increment: list-8;
+}
+.soco-content ol li.ql-indent-8:before {
+  content: counter(list-8, lower-roman) '. ';
+}
+.soco-content ol li.ql-indent-8 {
+  counter-reset: list-9;
+}
+.soco-content ol li.ql-indent-9 {
+  counter-increment: list-9;
+}
+.soco-content ol li.ql-indent-9:before {
+  content: counter(list-9, decimal) '. ';
+}
+.soco-content .ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 3em;
+}
+.soco-content li.ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 4.5em;
+}
+.soco-content .ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 3em;
+}
+.soco-content li.ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 4.5em;
+}
+.soco-content .ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 6em;
+}
+.soco-content li.ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 7.5em;
+}
+.soco-content .ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 6em;
+}
+.soco-content li.ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 7.5em;
+}
+.soco-content .ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 9em;
+}
+.soco-content li.ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 10.5em;
+}
+.soco-content .ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 9em;
+}
+.soco-content li.ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 10.5em;
+}
+.soco-content .ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 12em;
+}
+.soco-content li.ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 13.5em;
+}
+.soco-content .ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 12em;
+}
+.soco-content li.ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 13.5em;
+}
+.soco-content .ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 15em;
+}
+.soco-content li.ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 16.5em;
+}
+.soco-content .ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 15em;
+}
+.soco-content li.ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 16.5em;
+}
+.soco-content .ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 18em;
+}
+.soco-content li.ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 19.5em;
+}
+.soco-content .ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 18em;
+}
+.soco-content li.ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 19.5em;
+}
+.soco-content .ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 21em;
+}
+.soco-content li.ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 22.5em;
+}
+.soco-content .ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 21em;
+}
+.soco-content li.ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 22.5em;
+}
+.soco-content .ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 24em;
+}
+.soco-content li.ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 25.5em;
+}
+.soco-content .ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 24em;
+}
+.soco-content li.ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 25.5em;
+}
+.soco-content .ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 27em;
+}
+.soco-content li.ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 28.5em;
+}
+.soco-content .ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 27em;
+}
+.soco-content li.ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 28.5em;
+}
+.soco-content .ql-video {
+  display: block;
+  max-width: 100%;
+}
+.soco-content .ql-video.ql-align-center {
+  margin: 0 auto;
+}
+.soco-content .ql-video.ql-align-right {
+  margin: 0 0 0 auto;
+}
+.soco-content .ql-bg-black {
+  background-color: #000;
+}
+.soco-content .ql-bg-red {
+  background-color: #e60000;
+}
+.soco-content .ql-bg-orange {
+  background-color: #f90;
+}
+.soco-content .ql-bg-yellow {
+  background-color: #ff0;
+}
+.soco-content .ql-bg-green {
+  background-color: #008a00;
+}
+.soco-content .ql-bg-blue {
+  background-color: #06c;
+}
+.soco-content .ql-bg-purple {
+  background-color: #93f;
+}
+.soco-content .ql-color-white {
+  color: #fff;
+}
+.soco-content .ql-color-red {
+  color: #e60000;
+}
+.soco-content .ql-color-orange {
+  color: #f90;
+}
+.soco-content .ql-color-yellow {
+  color: #ff0;
+}
+.soco-content .ql-color-green {
+  color: #008a00;
+}
+.soco-content .ql-color-blue {
+  color: #06c;
+}
+.soco-content .ql-color-purple {
+  color: #93f;
+}
+.soco-content .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+.soco-content .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+.soco-content .ql-size-small {
+  font-size: 0.75em;
+}
+.soco-content .ql-size-large {
+  font-size: 1.5em;
+}
+.soco-content .ql-size-huge {
+  font-size: 2.5em;
+}
+.soco-content .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+.soco-content .ql-align-center {
+  text-align: center;
+}
+.soco-content .ql-align-justify {
+  text-align: justify;
+}
+.soco-content .ql-align-right {
+  text-align: right;
+}
+
+.soco-content h1 {
+  font-size: 2em;
+}
+.soco-content h2 {
+  font-size: 1.5em;
+}
+.soco-content h3 {
+  font-size: 1.17em;
+}
+.soco-content h4 {
+  font-size: 1em;
+}
+.soco-content h5 {
+  font-size: 0.83em;
+}
+.soco-content h6 {
+  font-size: 0.67em;
+}
+.soco-content a {
+  text-decoration: underline;
+}
+.soco-content blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.soco-content code,
+.soco-content pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.soco-content pre {
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.soco-content code {
+  font-size: 85%;
+  padding: 2px 4px;
+}
+.soco-content pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+}
